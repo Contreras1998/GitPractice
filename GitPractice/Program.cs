@@ -8,11 +8,16 @@ namespace GitPractice
         {
             Console.WriteLine();
         }
+
+        public static Homepage SetObjectPorperties()
+        {
+            return new Homepage("Phone", "Huawey Freebudds");
+        }
         static void Main(string[] args)
         {
-            var homePage = new Homepage("Headphones", "Huawey Freebudds");
-            homePage.GetProperties();
-
+            var home = new Homepage("Phone", "Huawey Freebudds");
+            Console.WriteLine(home.Header, home.UserInput);
+            Console.ReadLine();
         }
     }
 }
